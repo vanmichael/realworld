@@ -1,0 +1,10 @@
+<%= @contestant.show.title %>
+<%= @contestant.name %>
+
+<h2>Omg the Groupies</h2>
+
+<%= link_to 'Make a new Groupy!', new_show_contestant_groupy_path %>
+
+<% @groupies.each do |groupy| %>
+  <div><%= groupy.name %></div>
+<% end %>
